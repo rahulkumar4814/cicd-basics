@@ -1,8 +1,4 @@
 import pytest
-<<<<<<< HEAD
-from app import greet
-=======
->>>>>>> ca04d0c (fix: tidy test imports for ruff)
 from app import greet, shout
 
 def test_greet():
