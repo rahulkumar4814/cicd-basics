@@ -4,6 +4,9 @@ def greet(name: str) -> str:
         raise ValueError("name must not be empty")
     return f"Hello, {name}!"
 
+def shout(name: str) -> str:
+    return greet(name).upper()
+
 if __name__ == "__main__":
     import sys
     print(greet(sys.argv[1] if len(sys.argv) > 1 else "world"))

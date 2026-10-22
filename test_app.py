@@ -8,7 +8,10 @@ def test_greet():
 
 def test_greet_strips_spaces():
     assert greet("  Asha ") == "Hello, Asha!"
-    
+
 def test_empty_name_is_rejected():
     with pytest.raises(ValueError):
         greet("  ")
+
+def test_shout():
+    assert shout("rahul") == "HELLO, RAHUL!"
