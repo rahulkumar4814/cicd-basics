@@ -1,5 +1,4 @@
 import pytest
-from app import greet
 from app import greet, shout
 
 def test_greet():
